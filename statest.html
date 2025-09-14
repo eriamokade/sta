@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Strong Tower Academy Lagos</title>
+  <meta name="description" content="Strong Tower Academy Lagos — Learning · Character · Excellence" />
+  <!-- Tailwind CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small adjustments */
+    .hero-bg { background-position:center; background-size:cover; }
+    .card-shadow { box-shadow: 0 10px 30px rgba(15,23,42,0.06); }
+  </style>
+</head>
+<body class="antialiased text-gray-900 bg-white">
+
+  <!-- NAV -->
+  <header class="bg-white sticky top-0 z-30 border-b">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-yellow-400 to-yellow-200 grid place-items-center text-indigo-900 font-extrabold">ST</div>
+        <div>
+          <div class="font-semibold">Strong Tower Academy</div>
+          <div class="text-xs text-gray-500">Ikorodu, Lagos</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-indigo-700">Home</a>
+        <a href="about.html" class="hover:text-indigo-700">About</a>
+        <a href="admissions.html" class="hover:text-indigo-700">Admissions</a>
+        <a href="#academics" class="hover:text-indigo-700">Academics</a>
+        <a href="#gallery" class="hover:text-indigo-700">Gallery</a>
+        <a href="#contact" class="hover:text-indigo-700">Contact</a>
+        <a href="https://portal.strongtoweracademylagos.com.ng/" target="_blank" rel="noopener" class="ml-4 px-4 py-2 rounded-lg bg-indigo-900 text-white text-sm">Portal</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2 rounded-md text-gray-700">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-2">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="#academics">Academics</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg" style="background-image:url('https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/DSC5055-scaled.jpg');">
+    <div class="bg-indigo-900/60">
+      <div class="max-w-6xl mx-auto px-6 py-28 text-center text-white">
+        <div class="inline-block bg-white/10 px-3 py-1 rounded-full font-bold">Christ-centered • 21st-Century Learning</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold mt-6 leading-tight">Building Hearts and Minds for a Brighter Future</h1>
+        <p class="mt-4 text-lg text-indigo-100 max-w-2xl mx-auto">We partner with families to provide high-quality teaching, strong moral values, and future-ready skills in a safe and joyful learning community.</p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a class="px-6 py-3 rounded-lg bg-yellow-400 font-bold text-indigo-900 shadow" href="admissions.html">Apply Now</a>
+          <a class="px-6 py-3 rounded-lg border border-white/30 text-white" href="https://portal.strongtoweracademylagos.com.ng/" target="_blank" rel="noopener">Student/Parent Portal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + KPIs -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="inline-block text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full font-semibold">Who we are</p>
+        <h2 class="text-2xl font-bold mt-4">Welcome to Strong Tower Academy Lagos</h2>
+        <p class="mt-4 text-gray-600">A nurturing environment where every child is known, challenged, and supported to thrive—in character and in scholarship. We integrate the national curriculum with global best practices in literacy, numeracy, science, and character education.</p>
+
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <div class="p-4 bg-white rounded-lg card-shadow text-center">
+            <div class="text-2xl font-bold">15:1</div>
+            <div class="text-sm text-gray-500">Student-Teacher Ratio</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg card-shadow text-center">
+            <div class="text-2xl font-bold">100%</div>
+            <div class="text-sm text-gray-500">ICT-Enabled Classrooms</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg card-shadow text-center">
+            <div class="text-2xl font-bold">200+</div>
+            <div class="text-sm text-gray-500">Happy Families</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-lg overflow-hidden card-shadow">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/DSC3574-1536x1024.jpg" alt="School event" loading="lazy" class="w-full h-80 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES (icons you uploaded as SVGs) -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-xl font-semibold text-center text-gray-800">Our Core Values</h3>
+      <p class="text-center text-gray-500 mt-2">Character • Scholarship • Service</p>
+
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <!-- Academic Excellence -->
+        <div class="bg-white p-6 rounded-2xl card-shadow text-center">
+          <!-- Graduation cap SVG (matches the site style) -->
+          <div class="mx-auto w-20 h-20 rounded-md bg-green-600 grid place-items-center mb-4">
+            <svg viewBox="0 0 24 24" class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L1 7l11 5 9-4.09V17" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 22v-8" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="font-semibold">Academic Excellence</h4>
+          <p class="text-sm text-gray-500 mt-2">High-quality teaching and a strong reading culture help our learners excel academically.</p>
+        </div>
+
+        <!-- Innovation & Curiosity -->
+        <div class="bg-white p-6 rounded-2xl card-shadow text-center">
+          <div class="mx-auto w-20 h-20 rounded-md bg-green-600 grid place-items-center mb-4">
+            <!-- Pills/capsule-style SVG to resemble the icon -->
+            <svg viewBox="0 0 24 24" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="6" width="8.5" height="12" rx="4" fill="white"/>
+              <rect x="12.5" y="6" width="8.5" height="12" rx="4" transform="rotate(30 12.5 6)" fill="white"/>
+            </svg>
+          </div>
+          <h4 class="font-semibold">Innovation & Curiosity</h4>
+          <p class="text-sm text-gray-500 mt-2">We encourage creativity, coding, and problem-solving across grades.</p>
+        </div>
+
+        <!-- Discipline & Integrity -->
+        <div class="bg-white p-6 rounded-2xl card-shadow text-center">
+          <div class="mx-auto w-20 h-20 rounded-md bg-green-600 grid place-items-center mb-4">
+            <!-- Book SVG -->
+            <svg viewBox="0 0 24 24" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6.5C3 5.7 3.7 5 4.5 5h13c.8 0 1.5.7 1.5 1.5V18c0 .6-.4 1-1 1H4.5C3.7 19 3 18.3 3 17.5V6.5z" fill="white"/>
+              <path d="M7 7h10" stroke="#ffffff" stroke-width="0.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="font-semibold">Discipline & Integrity</h4>
+          <p class="text-sm text-gray-500 mt-2">We build character through routines, respect and community service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMICS -->
+  <section id="academics" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-2xl font-bold">Academics & Enrichment</h3>
+    <p class="text-gray-600 mt-2">Foundational skills and future-ready programs across key stages.</p>
+
+    <div class="mt-8 grid gap-6 md:grid-cols-3">
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <h4 class="font-semibold">Early Years & Primary</h4>
+        <p class="text-sm text-gray-500 mt-2">Phonics-based literacy, numeracy mastery, hands-on science and SEL.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <h4 class="font-semibold">Junior & Senior Secondary</h4>
+        <p class="text-sm text-gray-500 mt-2">Rigorous instruction, exam readiness and project-based learning.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <h4 class="font-semibold">Clubs & Enrichment</h4>
+        <p class="text-sm text-gray-500 mt-2">Coding, debate, sports, music, and entrepreneurship.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="bg-gray-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold">Gallery</h3>
+      <p class="text-gray-600 mt-2">Snapshots from school life and events.</p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/DSC5055-scaled.jpg" alt="Event 1" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/DSC3574-1536x1024.jpg" alt="Event 2" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/DSC4606-1536x1024.jpg" alt="Outdoor" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/e2.png" alt="Music" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://strongtoweracademylagos.com.ng/wp-content/uploads/2024/05/director.png" alt="Director" class="w-full h-48 object-cover rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-2xl font-bold">Contact Us</h3>
+        <p class="text-gray-600 mt-2">Reach the school office for admissions, tours and enquiries.</p>
+
+        <div class="mt-6 bg-white p-6 rounded-lg card-shadow">
+          <p><strong>Phone:</strong> <a href="tel:+234000000000" class="text-indigo-700">+234 000 000 0000</a></p>
+          <p class="mt-2"><strong>Email:</strong> <a href="mailto:info@strongtoweracademylagos.com.ng" class="text-indigo-700">info@strongtoweracademylagos.com.ng</a></p>
+          <p class="mt-2"><strong>Address:</strong> Ikorodu, Lagos State, Nigeria</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white p-6 rounded-lg card-shadow">
+          <form id="enquiryForm">
+            <label class="block text-sm font-medium">Full name
+              <input name="name" required class="mt-1 w-full border rounded-md px-3 py-2" />
+            </label>
+            <label class="block text-sm font-medium mt-3">Email
+              <input type="email" name="email" required class="mt-1 w-full border rounded-md px-3 py-2" />
+            </label>
+            <label class="block text-sm font-medium mt-3">Message
+              <textarea name="message" class="mt-1 w-full border rounded-md px-3 py-2"></textarea>
+            </label>
+            <div class="mt-4">
+              <button type="submit" class="px-4 py-2 rounded-md bg-indigo-900 text-white">Send Enquiry</button>
+            </div>
+            <p id="formStatus" class="text-sm mt-2 text-green-700"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-indigo-900 text-indigo-100">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+      <div>
+        <div class="font-bold">Strong Tower Academy Lagos</div>
+        <div class="text-sm text-indigo-200 mt-2">Ikorodu, Lagos • Mon–Fri 8:00–16:00</div>
+      </div>
+      <div class="text-sm">
+        <div><a class="hover:underline" href="about.html">About</a></div>
+        <div class="mt-2"><a class="hover:underline" href="admissions.html">Admissions</a></div>
+      </div>
+      <div class="text-sm">
+        <div>© <span id="year"></span> Strong Tower Academy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu
+    document.getElementById('mobileBtn').addEventListener('click', function(){ document.getElementById('mobileMenu').classList.toggle('hidden'); });
+    // demo form
+    document.getElementById('enquiryForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(this).entries());
+      console.log('ENQUIRY', data);
+      document.getElementById('formStatus').textContent = 'Thank you — we will be in touch.';
+      this.reset();
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
