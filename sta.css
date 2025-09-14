@@ -99,6 +99,9 @@ height: 150px;
   width: 150px;
   height: 2px;
 }
+ .line2{
+    background-color: red;
+ }
     .line {
         background-color: blue;
       }
@@ -167,3 +170,64 @@ height: 150px;
 .parent3{
     display: flex;
 }
+
+@media (max-width: 768px) {
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .lines {
+        flex-direction: column; /* stack vertically */
+      }
+    
+      .line1, .line2, .line3 {
+        height: 100px; /* make them taller so it looks nice */
+      }
+  
+    
+    .div4,
+    .parent2,
+    .div12,
+    .parent3,
+    .lineparent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    
+    .div3,
+    .div5,
+    .div6,
+    .div7,
+    .div8,
+    .div10,
+    .div13,
+    .div14 {
+      width: 90%;         
+      height: auto;       
+      margin: 10px auto;  
+      text-align: center; 
+    }
+  
+
+    .line, .line2, .line3 {
+      width: 90%;
+      height: 6px;  
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      height: auto;
+    }
+  
+    .thepdiv, .thep2div, .thep3div {
+      margin: 15px 0;
+      text-align: center;
+      right: auto;
+      left: auto;
+    }
+  }
+  
